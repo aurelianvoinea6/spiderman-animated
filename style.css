@@ -1,0 +1,42 @@
+body{
+    background-image: url("/image/city.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    width: 800px;
+    height: 600px;
+   
+    margin: 40px auto;
+    overflow: hidden;
+
+}
+
+.miles{
+    width: 600px;
+    margin: 0 auto;
+    display: block;
+    animation: miles 5s infinite;
+ }
+ 
+ @keyframes miles{
+    0%{
+        transform: translateY(-50px);
+    }
+    30% {
+        transform: translateY(0) rotate
+        (5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+ }
+
