@@ -3,15 +3,17 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+   
+     
+    
 }
 
 .container{
     width: 800px;
     height: 600px;
-   
-    margin: 40px auto;
+      margin: 40px auto;
     overflow: hidden;
-
+    
 }
 
 .miles{
@@ -39,4 +41,59 @@ body{
         transform: translateY(-50px);
     }
  }
+
+.tom{
+    height: 550px;
+    width: 350;
+    margin-left: 10px;
+    margin-top:-500px ;
+    transform: rotate(25deg);
+    transform-origin: top ;
+    animation: tom 5s linear infinite;
+}
+
+@keyframes tom {
+    0% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+
+.tom-shadow {
+    position: absolute;
+    height: 5px;
+    width: 200px;
+    border-radius: 50%;
+    top: 550px;
+    bottom: 100px;
+    left: 15px;
+    box-shadow: 0px 0px 30px black;
+    background: rgba(0, 0, 0, 0.4);
+    animation: tom-shadow 6s linear infinite;
+}
+
+@keyframes tom-shadow {
+    0% {
+        transform: translateX(-50px);
+    }
+
+    50% {
+        transform: translateX(40px)
+    }
+
+    100% {
+        transform: translateX(-50px)
+    }
+
+}
+
+
 
